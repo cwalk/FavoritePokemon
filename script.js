@@ -91,7 +91,7 @@ function reroll(fav) {
 	
 	//update top 9 image src
 	console.log(limit.max - limit.min - pkmElim.length);
- 	if(limit.max - limit.min - pkmElim.length <= 8 && fav != 3 ) {
+ 	if(limit.max - limit.min - pkmElim.length <= 18 && fav != 3 ) {
 		var x = document.getElementsByClassName('fav');
 		if(dropSel == 7) {
 			x[limit.max - limit.min - pkmElim.length].src = 'images/starters/' + pkmElim[pkmElim.length -1] + '.png';
