@@ -89,9 +89,9 @@ function reroll(fav) {
 			pkmLike.push(_tmp[3]);
 	}
 	
-	//update top 9 image src
+	//update top 9 image src. Changed top 9 to top 24. pkmElim.length <= 8 is now 23
 	console.log(limit.max - limit.min - pkmElim.length);
- 	if(limit.max - limit.min - pkmElim.length <= 18 && fav != 3 ) {
+ 	if(limit.max - limit.min - pkmElim.length <= 23 && fav != 3 ) {
 		var x = document.getElementsByClassName('fav');
 		if(dropSel == 7) {
 			x[limit.max - limit.min - pkmElim.length].src = 'images/starters/' + pkmElim[pkmElim.length -1] + '.png';
